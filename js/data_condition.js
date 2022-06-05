@@ -91,6 +91,16 @@ data_condition = [
         ]
     },
     {
+        title: "Marked",
+        icon: "targeting",
+        subtitle: "You are marked",
+        description: "You're engaged in melee combat",
+        reference: "DMG, pg. 271.",
+        bullets: [
+            "The source of your mark has advantage on opportunity attacks against you."
+        ]
+    },
+    {
         title: "Paralyzed",
         icon: "internal-injury",
         subtitle: "You are paralyzed",

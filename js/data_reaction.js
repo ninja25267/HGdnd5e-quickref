@@ -9,7 +9,10 @@ data_reaction = [
             "Trigger: enemy creature you can see leaves your reach.",
             "Make one melee attack against the provoking creature.",
             "The attack interrupts the provoking creature's movement, occurring right before the creature leaves your reach.",
-            "Creatures don't provoke an opportunity attack when they teleport or when someone or something moves them without using their movement, action, or reaction."
+            "Creatures don't provoke an opportunity attack when they teleport or when someone or something moves them without using their movement, action, or reaction.",
+            "If the provoking creature is marked by you, you make this attack at advantage and it does not expend your reaction.",
+            "You can only make one opportunity attack per turn against marked targets.",
+            "You cannot make an opportunity attack regardless of if the target is marked if you cannot take reactions."
         ]
     },
     {

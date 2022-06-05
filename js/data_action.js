@@ -36,7 +36,9 @@ data_action = [
             "Using the <i>Attack</i> action, you can make a special melee attack to shove a creature. If you're able to make multiple attacks with the Attack action, this attack replaces one of them.",
             "The target of your shove must be no more than one size larger than you, and it must be within your reach.",
             "You make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check (the target chooses the ability to use).",
-            "If you win the contest, you either knock the target prone or push it 5 feet away from you."
+            "If you win the contest, you either knock the target prone or push it 5 feet away from you.",
+            "Alternatively you can push the target to the side but you must make the Strength (Athletics) check at disadvantage.",
+            "If you win the contest, you move the target to a different space within your reach."
         ]
     },
     {
@@ -187,6 +189,99 @@ data_action = [
         ]
     },
     {
+        title: "Climb onto a Bigger Creature",
+        icon: "gecko",
+        subtitle: "Climb a larger creature",
+        description: "Latch onto a larger creature",
+        reference: "DMG, pg. 271.",
+        bullets: [
+            "Make a Strength (Athletics) or Dexterity (Acrobatics) contested by the target's Dexterity (Acrobatics) check.",
+            "If you win the contest, you successfully move into the target creature's space.",
+            "You move with the target and have advantage on attack rolls against it.",
+            "You can move around within the creature's space, treating the space as difficult terrain."
+        ]
+    },
+    {
+        title: "Dislodge",
+        icon: "falling",
+        subtitle: "Dislodge a smaller creature",
+        description: "Stop a smaller creature from climbing on you",
+        reference: "DMG, pg. 271.",
+        bullets: [
+            "Make a Strength (Athletics) contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check.",
+            "If you win the contest, the creature is forced to stop climbing you."
+        ]
+    },
+    {
+        title: "Disarm",
+        icon: "sword-break",
+        subtitle: "Disarm a creature",
+        description: "Force a creature to drop a weapon or item",
+        reference: "DMG, pg. 271.",
+        bullets: [
+            "Make an attack roll contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check.",
+            "If you win the contest, the target takes no damage but drops the chosen item.",
+            "You make the attack with disadvantage if the item is being held in two hands.",
+            "The target has advantage on the ability check if it is larger than you and disadvantage if it is smaller than you."
+        ]
+    },
+    {
+        title: "Mark",
+        icon: "targeting",
+        subtitle: "Mark a creature",
+        description: "Mark a creature as part of a melee attack",
+        reference: "DMG, pg. 271.",
+        bullets: [
+            "When you make a melee attack against a creature, you can also mark the target creature.",
+            "Until the end of your next turn the target is marked."
+        ]
+    },
+    {
+        title: "Overrun",
+        icon: "minotaur",
+        subtitle: "Move through a hostile creature",
+        description: "Attempt to move through a hostile creature's space",
+        reference: "DMG, pg. 271.",
+        bullets: [
+            "Make a Strength (Athletics) contested by the target's Strength (Athletics) check.",
+            "You have advantage on this check if you are larger than the target and disadvantage if you are smaller.",
+            "If you win the contest, you can move through the target's space once this turn."
+        ]
+    },
+    {
+        title: "Tumble",
+        icon: "run",
+        subtitle: "Move through a hostile creature",
+        description: "Attempt to move through a hostile creature's space",
+        reference: "DMG, pg. 271.",
+        bullets: [
+            "Make a Dexterity (Acrobatics) contested by the target's Dexterity (Acrobatics) check.",
+            "If you win the contest, you can move through the target's space once this turn."
+        ]
+    },
+    {
+        title: "Reload",
+        icon: "ammo-box",
+        subtitle: "Reload a weapon",
+        description: "Reload a weapon with the reload property",
+        reference: "PEO, pg. 1.",
+        bullets: [
+            "You reload a weapon you're holding with the reload property."
+        ]
+    },
+    {
+        title: "Repair",
+        icon: "auto-repair",
+        subtitle: "Repair a misfired weapon",
+        description: "Repair a weapon which has misfired",
+        reference: "PEO, pg. 1.",
+        bullets: [
+            "Make a Tinker's Tools check against a DC of 8 + the weapon's misfire score.",
+            "If you succeeded on the ability check then the weapon can be used again.",
+            "If you fail on the ability check then the weapon breaks and must be mended out of combat."
+        ]
+    },
+    {
         title: "Improvise",
         icon: "juggler",
         subtitle: "Any action not on this list",
@@ -195,5 +290,5 @@ data_action = [
         bullets: [
             "When you describe an action not detailed elsewhere in the rules, the DM tells you whether that action is possible and what kind of roll you need to make, if any, to determine success or failure."
         ]
-    }
+    },
 ]
